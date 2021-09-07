@@ -1,0 +1,51 @@
+.header {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../../img/backgrounds/main-background.jpg) no-repeat center center;
+    background-size: cover;
+
+    &__main {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__title {
+        margin-bottom: 25px;
+        font-size: 65px;
+        color: #ffcc00;
+    }
+    
+    &__text {
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    &__text span {
+        color: #ffcc00;
+    }
+    
+    &__tel {
+        margin-bottom: 50px;
+        font-size: 30px;
+        color: #3288e6;
+    }
+    
+    &__button {
+        padding: 15px 25px;
+        font-size: 18px;
+        font-weight: 500;
+        border: 2px solid #ffcc00;
+        border-radius: 4px;
+        background: #ffcc00;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    &__button:hover {
+        color: #ffcc00;
+        background: #1f1e1b;
+    }
+}

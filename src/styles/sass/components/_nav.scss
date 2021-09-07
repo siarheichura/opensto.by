@@ -1,0 +1,42 @@
+.nav {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    background: #e5e9e0;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 40px;
+        width: 170px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 28px;
+        font-weight: 700;
+        background: url(../../img/icons/logo.svg) no-repeat center left;
+        background-size: contain;
+    }
+
+    &__list {
+        display: flex;
+        font-weight: 500;
+    }
+    
+    &__item {
+        margin-left: 25px;
+    }
+    
+    &__link {
+        color: #000;
+        transition: 0.2s;
+    }
+    
+    &__link:hover {
+        color: #ffcc00;
+    }
+}

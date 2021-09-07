@@ -1,0 +1,25 @@
+.benefits {
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../../img/backgrounds/benefits.jpg) no-repeat center center;
+    background-size: cover;
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+
+    &__body {
+        display: flex;
+    }
+}
