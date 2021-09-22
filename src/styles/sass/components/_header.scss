@@ -1,61 +1,72 @@
 .header {
-    height: 100vh;
-    padding-bottom: 40px;
+  position: relative;
+  height: 100vh;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../img/backgrounds/main-background.jpg) no-repeat center center;
+  background-size: cover;
+
+  &__title {
+    max-width: 1100px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    font-size: 65px;
+    font-weight: 800;
+    color: $secondary-color;
+    background: url(../../img/backgrounds/title-border.png) no-repeat center top,
+      url(../../img/backgrounds/title-border.png) no-repeat center bottom;
+  }
+
+  &__main {
+    position: absolute;
+    top: calc(50% - 85px);
+    left: calc(50% - 550px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/backgrounds/main-background.jpg) no-repeat center center;
-    background-size: cover;
-    
-    &__title {
-        max-width: 1100px;
-        margin-bottom: 20px;
-        padding: 20px 0;
-        font-size: 65px;
-        font-weight: 800;
-        color: #ffcc00;
-        background: url(../../img/backgrounds/title-border.png) no-repeat center top, url(../../img/backgrounds/title-border.png) no-repeat center bottom;
-    }
-    
-    &__text {
-        margin-bottom: 8px;
-        font-size: 32px;
-        color: #fff;
+  }
 
-        & span {
-            color: #ffcc00;
-        }
-    }
-    
-    &__tel {
-        margin-bottom: 50px;
-        font-size: 36px;
-        // color: #3288e6;
-        font-weight: 700;
-        color: #fff;
-        transition: 0.3s;
+  &__text {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: $white-color;
 
-        &:hover {
-            color: #ffcc00;
-        }
+    & span {
+      color: $secondary-color;
     }
-    
-    &__button {
-        padding: 15px 25px;
-        font-family: 'Scada', sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        border: 2px solid #ffcc00;
-        border-radius: 4px;
-        background: #ffcc00;
-        cursor: pointer;
-        transition: 0.3s;
+  }
+
+  &__tel {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    color: $white-color;
+    transition: 0.3s;
+
+    &:hover {
+      color: $secondary-color;
     }
-    
-    &__button:hover {
-        color: #ffcc00;
-        background: #1f1e1b;
-    }
+  }
+
+  &__button {
+    padding: 15px 25px;
+    font-family: $font-OS;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid #ffcc00;
+    border-radius: 4px;
+    background: #ffcc00;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  &__button:hover {
+    color: #ffcc00;
+    background: #1f1e1b;
+  }
 }

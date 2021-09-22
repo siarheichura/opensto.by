@@ -1,46 +1,44 @@
 .about {
-    padding: 70px 0;
-    background: url(../../img/backgrounds/aboutUs-background.png) no-repeat center center;
-    color: #2c2c2c;
+  padding: 70px 0;
+  background: url(../../img/backgrounds/aboutUs-background.png) no-repeat center
+    center;
+  color: $primary-color;
 
-    & .container {
-        width: 60%;
-        display: flex;
-        align-items: center;
-        gap: 20px;
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__main {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    font-size: 42px;
+    font-weight: 700;
+    border-bottom: 2px solid $secondary-color;
+  }
+
+  &__subtitle {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  &__text {
+    width: 55%;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.4;
+
+    & span {
+      color: $secondary-color;
     }
-
-    &__main {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    &__title {
-        margin-bottom: 30px;
-        padding-bottom: 15px;
-        font-family: 'Scada', sans-serif;
-        font-size: 42px;
-        font-weight: 700;
-        border-bottom: 2px solid #fbcf00;
-    }
-
-    &__subtitle {
-        font-family: 'Open Sans', sans-serif;
-        text-align: left;
-        line-height: 1.4;
-    }
-
-
-    &__text {
-        width: 60%;
-        font-family: 'Open Sans', sans-serif;
-        text-align: left;
-        line-height: 1.4;
-
-        & span {
-            color: #fbcf00;
-        }
-    }
+  }
 }

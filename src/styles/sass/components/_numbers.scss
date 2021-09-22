@@ -1,0 +1,50 @@
+.numbers {
+  background: linear-gradient(rgba(14, 9, 9, 0.7), rgba(14, 9, 9, 0.7)),
+    url(../../img/backgrounds/number-background.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  color: $white-color;
+
+  & .container {
+    padding: 50px 0;
+    width: 92%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    width: 19%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+    height: 2px;
+    background: $secondary-color;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &__number {
+    margin: 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: $secondary-color;
+  }
+}

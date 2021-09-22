@@ -1,17 +1,21 @@
-// Components
-@import 'components/header';
-@import 'components/nav';
-@import 'components/about';
-@import 'components/benefits';
-
-@import 'components/modal';
-
-
-
 // Base
-@import 'config/reset';
-@import 'config/base'
+@import "config/variables";
+@import "config/reset";
+@import "config/base";
 
+// Components
+@import "components/header";
+@import "components/nav";
+@import "components/about";
+@import "components/benefits";
+@import "components/numbers";
+@import "components/documents";
+@import "components/choose";
+@import "components/stages";
+@import "components/questions";
+@import "components/contacts";
+
+@import "components/modal";
 
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Scada', sans-serif;
