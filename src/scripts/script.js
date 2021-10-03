@@ -8,17 +8,32 @@ function init() {
   });
 }
 
-// Появление модального окна
-
-const btnCallMe = document.getElementById("btnCallMe");
-const modalWindow = document.getElementById("modalWindow");
-
-btnCallMe.addEventListener("click", () => {
-  modalWindow.classList.remove("d-none");
-});
-
 // Модальное окно
 
+const btnCallMe = document.getElementById("btnCallMe");
+
+const modalWindow = document.getElementById("modalWindow");
 const modalInputName = document.getElementById("modalInputName");
 const modalInputEmail = document.getElementById("modalInputEmail");
-const modalBtn = document.getElementById("modalBtn");
+const modalBtnClose = document.getElementById("modalBtnClose");
+const modalBtnSend = document.getElementById("modalBtnSend");
+
+function printModal() {
+  modalWindow.classList.remove("d-none");
+}
+
+function closeModal() {
+  modalWindow.classList.add("d-none");
+}
+
+btnCallMe.addEventListener("click", () => {
+  printModal();
+});
+
+modalBtnClose.addEventListener("click", () => {
+  closeModal();
+});
+
+modalBtnSend.addEventListener("click", () => {
+  closeModal();
+});
