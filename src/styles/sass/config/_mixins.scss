@@ -1,0 +1,17 @@
+@mixin button($width, $height, $border-radius) {
+  width: $width;
+  height: $height;
+  font-family: $font-OS;
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid #ffcc00;
+  border-radius: $border-radius;
+  background: #ffcc00;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@mixin buttonHover {
+  color: #ffcc00;
+  background: #1f1e1b;
+}

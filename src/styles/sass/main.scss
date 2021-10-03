@@ -1,5 +1,6 @@
 // Base
 @import "config/variables";
+@import "config/mixins";
 @import "config/reset";
 @import "config/base";
 
@@ -19,3 +20,7 @@
 
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Scada', sans-serif;
+
+.d-none {
+  display: none;
+}

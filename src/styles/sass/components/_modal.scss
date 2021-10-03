@@ -1,23 +1,60 @@
 .modal {
+  position: absolute;
+  top: calc(50% - 160px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 320px;
+  padding: 45px 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: $white-color;
+  border-radius: 5px;
+  box-shadow: 4px 8px 39px 3000px rgba(0, 0, 0, 0.84);
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  &__btn--close {
     position: absolute;
-    top: 20%;
-    left: 20%;
-    width: 400px;
-    height: 320px;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border-radius: 5px;
+    top: 20px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: url(../../img/icons/close.svg) no-repeat center center;
+    background-size: cover;
+    transition: 0.3s;
 
-    &__title {
-        font-size: 26px;
-        font-weight: 700;
+    &:hover {
+      transform: rotate(90deg);
     }
-    
-    /* &__name-input,
-    &__email-input {
-    
-    } */
-}
+  }
 
+  &__input--name,
+  &__input--email {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 3px;
+    box-sizing: border-box;
+    transition: 0.3s;
+
+    &:focus {
+      box-shadow: 0px 0px 12px -5px rgba(51, 51, 51, 0.68);
+    }
+  }
+
+  &__btn--send {
+    margin-top: 10px;
+    @include button(160px, 55px, 3px);
+
+    &:hover {
+      @include buttonHover;
+    }
+  }
+}

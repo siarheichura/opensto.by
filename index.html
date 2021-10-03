@@ -31,7 +31,7 @@
             <h1 class="header__title">Открытие и сертификация СТО</h1>
             <p class="header__text">Работаем с 2007 года. Выезд и консультация <span>БЕСПЛАТНО</span></p>
             <a class="header__tel" href="tel:+375293110560">+375(29)311-05-60</a>
-            <button class="header__button">Перезвоните мне</button>
+            <button class="header__button" id="btnCallMe">Перезвоните мне</button>
         </div>
     </header>
 
@@ -270,12 +270,12 @@
     </div>
 
     
-        <!-- <div class="modal">
-            <div class="modal_button-close"></div>
+        <div class="modal d-none" id="modalWindow">
+            <button class="modal__btn--close"></button>
             <h4 class="modal__title">УЗНАТЬ СТОИМОСТЬ</h4>
-            <input class="modal__name-input" type="text" placeholder="ИМЯ">
-            <input class="modal__email-input" type="text" placeholder="ТЕЛЕФОН">
-            <button class="modal__button"></button>
-        </div> -->
+            <input class="modal__input--name" type="text" placeholder="Имя" id="modalInputName">
+            <input class="modal__input--email" type="text" placeholder="Телефон" id="modalInputEmail">
+            <button  class="modal__btn--send" id="modalBtn">Отправить</button>
+        </div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 .header {
-  position: relative;
+  // position: relative;
   height: 100vh;
   padding-bottom: 40px;
   display: flex;
@@ -54,19 +54,10 @@
   }
 
   &__button {
-    padding: 15px 25px;
-    font-family: $font-OS;
-    font-size: 20px;
-    font-weight: 700;
-    border: 2px solid #ffcc00;
-    border-radius: 4px;
-    background: #ffcc00;
-    cursor: pointer;
-    transition: 0.3s;
+    @include button(220px, 60px, 4px);
   }
 
   &__button:hover {
-    color: #ffcc00;
-    background: #1f1e1b;
+    @include buttonHover;
   }
 }
