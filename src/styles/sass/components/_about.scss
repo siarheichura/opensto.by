@@ -6,13 +6,11 @@
 
   & .container {
     display: flex;
-    // align-items: center;
     justify-content: space-between;
   }
 
   &__main {
     width: 40%;
-    // height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -20,23 +18,19 @@
   }
 
   &__title {
-    // margin-bottom: 30px;
     padding-bottom: 10px;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: 700;
     border-bottom: 2px solid $secondary-color;
   }
 
   &__subtitle {
-    // text-align: left;
-    font-size: 18px;
     line-height: 1.4;
   }
 
   &__text {
-    width: 55%;
+    width: 52%;
     text-align: left;
-    font-size: 18px;
     line-height: 1.4;
 
     & span {

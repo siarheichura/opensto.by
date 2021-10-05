@@ -1,13 +1,13 @@
 .numbers {
+  padding: 70px 0;
   background: linear-gradient(rgba(14, 9, 9, 0.7), rgba(14, 9, 9, 0.7)),
     url(../../img/backgrounds/number-background.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-OS;
   color: $white-color;
 
   & .container {
-    padding: 50px 0;
     width: 92%;
   }
 
@@ -17,32 +17,33 @@
   }
 
   &__item {
-    position: relative;
+    // position: relative;
     width: 19%;
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    line-height: 1.4;
   }
 
-  &__item::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 90px;
-    height: 2px;
-    background: $secondary-color;
-  }
+  // &__item::after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   width: 90px;
+  //   height: 2px;
+  //   background: $secondary-color;
+  // }
 
   &__text {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
   }
 
   &__number {
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 48px;
     font-weight: 700;
     color: $secondary-color;
