@@ -1,14 +1,15 @@
 /* Documents */
 
 .documents {
+  padding: 70px 0;
+
   & .container {
-    padding: 50px 0;
     display: flex;
     justify-content: space-between;
   }
 
   &__body {
-    width: 63%;
+    width: 60%;
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -18,19 +19,19 @@
   }
 
   &__title {
-    font-size: 42px;
+    font-size: 38px;
     font-weight: 600;
   }
 
   &__text {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
   }
 
   &__form {
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     /* gap: 40px; */
   }
 
@@ -40,23 +41,26 @@
     font-size: 16px;
     font-weight: 400;
     border: 1px solid rgba(204, 204, 204, 1);
-    border-radius: 60px;
+    // border-radius: 60px;
+    border-radius: 3px;
     outline: none;
   }
 
   &__button {
-    width: 40%;
-    font-size: 16px;
-    font-weight: 400;
-    background: $secondary-color;
-    border: 2px solid $secondary-color;
-    border-radius: 60px;
-    cursor: pointer;
-    transition: 0.3s;
+    @include button(40%, 100%, 3px);
+    // width: 40%;
+    // font-size: 16px;
+    // font-weight: 400;
+    // background: $secondary-color;
+    // border: 2px solid $secondary-color;
+    // border-radius: 60px;
+    // cursor: pointer;
+    // transition: 0.3s;
 
     &:hover {
-      color: $secondary-color;
-      background: #1f1e1b;
+      @include buttonHover;
+      // color: $secondary-color;
+      // background: #1f1e1b;
     }
   }
 
@@ -64,6 +68,6 @@
     width: 35%;
     height: 350px;
     background: url(../../img/backgrounds/documents.jpg) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
   }
 }
