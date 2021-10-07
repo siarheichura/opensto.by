@@ -1,0 +1,57 @@
+.burger {
+  display: none;
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  &__btn {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    height: 3px;
+    width: 30px;
+    background-color: $primary-color;
+    transition: 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      height: 3px;
+      width: 30px;
+      background-color: $primary-color;
+      transition: 0.3s;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      height: 3px;
+      width: 30px;
+      background-color: $primary-color;
+      transition: 0.3s;
+    }
+  }
+
+  &:hover {
+    .burger__btn {
+      width: 20px;
+      background: $secondary-color;
+    }
+
+    .burger__btn::after {
+      width: 10px;
+      background: $secondary-color;
+    }
+
+    .burger__btn::before {
+      background: $secondary-color;
+    }
+  }
+}

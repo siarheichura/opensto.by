@@ -1,5 +1,78 @@
-@media screen and (max-width: 1100px) {
-  .header__title {
-    font-size: 60px;
+@media screen and (max-width: 1024px) {
+  .nav__list {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header {
+    &__title {
+      max-width: 800px;
+      font-size: 50px;
+    }
+  }
+
+  .about {
+    & .container {
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+    }
+
+    &__main {
+      width: 100%;
+    }
+
+    &__title,
+    &__subtitle {
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+
+  .numbers {
+    & .container {
+      width: 80%;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__title {
+      max-width: 600px;
+      font-size: 39px;
+    }
+
+    &__text {
+      font-size: 22px;
+    }
+  }
+
+  .benefits {
+    &__body {
+      flex-direction: column;
+      gap: 25px;
+
+      // justify-content: space-between;
+    }
+
+    &__list--left,
+    &__list--right {
+      width: 100%;
+    }
   }
 }

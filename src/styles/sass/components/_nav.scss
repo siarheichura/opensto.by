@@ -31,12 +31,13 @@
   }
 
   &__item {
-    margin-left: 35px;
+    margin-left: 25px;
   }
 
   &__link {
     position: relative;
     display: flex;
+    font-size: 15px;
     font-weight: 700;
     color: $primary-color;
     line-height: 25px;

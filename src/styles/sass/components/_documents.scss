@@ -10,7 +10,7 @@
 
   &__body {
     width: 60%;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,25 +29,28 @@
   }
 
   &__form {
-    width: 80%;
+    width: 90%;
     display: flex;
     // justify-content: space-between;
     /* gap: 40px; */
   }
 
   &__input {
-    width: 55%;
+    width: 65%;
     padding: 20px 30px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     border: 1px solid rgba(204, 204, 204, 1);
     // border-radius: 60px;
-    border-radius: 3px;
+    border-radius: 3px 0 0 3px;
     outline: none;
   }
 
   &__button {
-    @include button(40%, 100%, 3px);
+    @include button(35%, 100%, 3px);
+    border-radius: 0 3px 3px 0;
+    font-size: 18px;
+    font-weight: 500;
     // width: 40%;
     // font-size: 16px;
     // font-weight: 400;

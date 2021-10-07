@@ -1,0 +1,19 @@
+.footer {
+  padding: 7px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, rgb(235, 246, 243), rgb(211, 245, 246));
+
+  &__link {
+    color: $primary-color;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s;
+
+    &:hover {
+      color: #807c7c;
+    }
+  }
+}
