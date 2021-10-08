@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" rel="shortcut icon" href="./src/img/icons/car_service_9j6_icon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles/css/main.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=28490cef-f062-46cf-9393-642ec0229a61&lang=ru_RU" type="text/javascript"></script>
-    <script src="./src/scripts/script.js" defer></script>
+    <script src="./src/scripts/index.js" type="module" defer></script>
     <title>Как открыть СТО, сертификация автосервиса, работаем в Минске и по всей Беларуси</title>
 </head>
 <body>
     <nav class="nav">
         <div class="container">
-            <a class="nav__logo" href="#">опенСТО</a>
+            <a class="nav__logo" href="#" id="logo">опенСТО</a>
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">О НАС</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">ПРЕИМУЩЕСТВА</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">МЫ В ЦИФРАХ</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">ВЫБИРАЕМ</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">КОНТАКТЫ</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">О НАС</a></li>
+                <li class="nav__item"><a href="#benefits" class="nav__link">ПРЕИМУЩЕСТВА</a></li>
+                <li class="nav__item"><a href="#numbers" class="nav__link">МЫ В ЦИФРАХ</a></li>
+                <li class="nav__item"><a href="#choose" class="nav__link">ВЫБИРАЕМ</a></li>
+                <li class="nav__item"><a href="#contacts" class="nav__link">КОНТАКТЫ</a></li>
             </ul>
 
             <div class="burger">
@@ -39,7 +41,7 @@
     </header>
 
     <main>
-        <div class="about">
+        <div class="about" id="about">
             <div class="container">
                 <div class="about__main">
                     <h2 class="about__title">О НАС</h2>
@@ -54,7 +56,7 @@
             </div>
         </div>
 
-        <div class="benefits">
+        <div class="benefits" id="benefits">
             <div class="container">
                 <h2 class="benefits__title">Наши преимущества</h2>
                 <h3 class="benefits__subtitle">Гарантируем высокое качество работы, скорость и хороший сервис! Работаем с 2007 года!</h4>
@@ -117,7 +119,7 @@
             </div>
         </div>
 
-        <div class="numbers">
+        <div class="numbers" id="numbers">
             <div class="container">
                 <ul class="numbers__list">
                     <li class="numbers__item">
@@ -155,15 +157,15 @@
                     <h2 class="documents__title">Примерно так выглядит комплект документов, готовы?</h2>
                     <p class="documents__text">А мы готовы! Выполним в срок от 5 дней до двух недель, качественно разработанные и согласованные документы!</p>
                     <div class="documents__form">
-                        <input class="documents__input" type="tel" placeholder="Номер телефона">
-                        <button class="documents__button">Заказать звонок</button>
+                        <input class="documents__input" type="tel" placeholder="Номер телефона" id="docsInput">
+                        <button class="documents__button" id="docsButton">Заказать звонок</button>
                     </div>
                 </div>
                 <div class="documents__img"></div>
             </div>        
         </div>
     
-        <div class="choose">
+        <div class="choose" id="choose">
             <div class="container">
                 <h2 class="choose__title">Решаем, что открыть</h2>
                 <div class="choose__body">
@@ -244,14 +246,14 @@
                 <h2 class="questions__title">У ВАС ОСТАЛИСЬ ВОПРОСЫ?</h2>
                 <p class="questions__text">Заполните форму и наш менеджер вас проконсультирует</p>
                 <div class="questions__form">
-                    <input class="questions__input" type="text" placeholder="Ваше имя">
-                    <input class="questions__input" type="text" placeholder="Номер телефона">
-                    <button class="questions__button">Позвоните мне</button>
+                    <input class="questions__input" type="text" placeholder="Ваше имя" id="questionsName">
+                    <input class="questions__input" type="text" placeholder="Номер телефона" id="questionsTel">
+                    <button class="questions__button" id="questionsButton">Позвоните мне</button>
                 </div>
             </div>
         </div>
     
-        <div class="contacts">
+        <div class="contacts" id="contacts">
             <div class="container">
                 <h2 class="contacts__title">Контакты</h2>
                 <div class="contacts__body">
