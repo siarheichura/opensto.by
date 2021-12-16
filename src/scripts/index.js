@@ -18,6 +18,7 @@ const modalInputName = document.getElementById("modalInputName");
 const modalInputTel = document.getElementById("modalInputTel");
 const modalBtnClose = document.getElementById("modalBtnClose");
 const modalBtnSend = document.getElementById("modalBtnSend");
+const modalWarning = document.querySelector(".modal__warn");
 // documents section
 const docsInputTel = document.getElementById("docsInput");
 const docsButton = document.getElementById("docsButton");
@@ -32,9 +33,11 @@ const printModal = () => {
   modalWindow.classList.remove("d-none");
   body.style.overflow = "hidden";
 };
+
 const closeModal = () => {
   modalWindow.classList.add("d-none");
   body.removeAttribute("style");
+  modalWarning.style.opacity = "0";
 };
 
 const clearInputs = (...inputs) => {
@@ -45,9 +48,14 @@ const handleListeners = () => {
   btnCallMe.addEventListener("click", () => printModal());
   modalBtnClose.addEventListener("click", () => closeModal());
   modalBtnSend.addEventListener("click", () => {
-    closeModal();
-    sendTgMessage(modalInputName.value, modalInputTel.value);
-    clearInputs(modalInputName, modalInputTel);
+    if ((!!modalInputName.value, !!modalInputTel.value)) {
+      sendTgMessage(modalInputName.value, modalInputTel.value);
+      closeModal();
+      clearInputs(modalInputName, modalInputTel);
+      modalWarning.style.opacity = "0";
+    } else {
+      modalWarning.style.opacity = "1";
+    }
   });
 
   docsButton.addEventListener("click", () => {
@@ -65,6 +73,6 @@ const handleListeners = () => {
 
 // Обновление страницы при клике на лого
 // const logo = document.getElementById("logo");
-// logo.addEventListener("click", () => {
-//   window.location.reload();
-// });
+logo.addEventListener("click", () => {
+  window.location.reload();
+});

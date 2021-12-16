@@ -1,5 +1,5 @@
 .modal {
-  position: absolute;
+  position: fixed;
   top: calc(50% - 160px);
   left: calc(50% - 200px);
   width: 400px;
@@ -50,11 +50,17 @@
   }
 
   &__btn--send {
-    margin-top: 10px;
+    // margin-top: 10px;
     @include button(160px, 55px, 3px);
 
     &:hover {
       @include buttonHover;
     }
+  }
+
+  &__warn {
+    font-size: 10px;
+    color: red;
+    opacity: 0;
   }
 }
